@@ -1,5 +1,5 @@
 import React from "react";
-import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions'
 
 export const App = () => {
   return (
