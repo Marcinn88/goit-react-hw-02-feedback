@@ -4,13 +4,22 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        flexDirection: 'column',
+        alignItems: 'flex-start',
       }}
     >
-      React homework template
+      <h1>Please leave feedback</h1>
+      <div>
+        <button>Good</button>
+        <button>Neutral</button>
+        <button>Bad</button>
+      </div>
+      <h2>Statistic</h2>
+      <ul>
+        <li>Good: 3</li>
+        <li>Neutral: 2</li>
+        <li>Bad: 2</li>
+      </ul>
     </div>
   );
 };
