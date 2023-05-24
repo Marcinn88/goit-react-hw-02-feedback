@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./FeedbackOptions.module.css";
 
-export default class FeedbackOptions extends React.Component {
+export  class FeedbackOptions extends React.Component {
     // constructor(props){
     //     super(props);
     // }
