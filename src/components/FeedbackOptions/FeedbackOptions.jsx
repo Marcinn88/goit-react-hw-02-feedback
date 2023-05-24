@@ -8,7 +8,7 @@ export  class FeedbackOptions extends React.Component {
     }
     static propTypes = {
         options: PropTypes.array.isRequired,
-        onLeaveFeedback: PropTypes.func.isRequired,
+        onLeaveFeedback: PropTypes.func,
     }
 
     render() {

@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions'
 
-export const App = (
+export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
     bad: 0
-  }
-) => {
+  };
+render(){
   return (
     <div
       style={{
@@ -22,10 +22,10 @@ export const App = (
       <FeedbackOptions />
       <h2>Statistic</h2>
       <ul>
-        <li>Good: {state.good}</li>
-        <li>Neutral: {state.neutral}</li>
-        <li>Bad: {state.bad}</li>
+        <li>Good:</li>
+        <li>Neutral:</li>
+        <li>Bad:</li>
       </ul>
     </div>
   );
-};
+}};
