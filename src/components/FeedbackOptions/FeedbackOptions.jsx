@@ -1,28 +1,29 @@
 import React from "react";
 import css from "./FeedbackOptions.module.css";
+import PropTypes from "prop-types";
 
 export  class FeedbackOptions extends React.Component {
-    // constructor(props){
-    //     super(props);
-    // }
-    // static defaultProps = {
-    //     contents:[]
-    // }
-    // static propTypes = {
-    //     contents: Array
-    // }
+    static defaultProps = {
+        options:[],
+    }
+    static propTypes = {
+        options: PropTypes.array.isRequired,
+        onLeaveFeedback: PropTypes.func.isRequired,
+    }
 
-    render(){
+    render() {
         return (
-    <ul className={css.buttons}>
-        <li>
-            <button>Good</button>
-        </li>
-        <li>
-            <button>Neutral</button>
-        </li>
-        <li>
-            <button>Bad</button>
-        </li>
-    </ul>
-    )}};
+            <ul className={css.buttons}>
+                <li>
+                    <button onClick={event => console.log(event)}>Good</button>
+                </li>
+                <li>
+                    <button onClick={event => console.log(event)}>Neutral</button>
+                </li>
+                <li>
+                    <button onClick={event => console.log(event)}>Bad</button>
+                </li>
+            </ul>
+        )
+    }
+};
