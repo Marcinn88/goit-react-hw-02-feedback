@@ -1,3 +1,5 @@
+import React from "react";
+
 export const App = () => {
   return (
     <div
@@ -6,6 +8,7 @@ export const App = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
+        paddingLeft: '20px',
       }}
     >
       <h1>Please leave feedback</h1>
