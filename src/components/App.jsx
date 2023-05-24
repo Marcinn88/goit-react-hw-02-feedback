@@ -1,4 +1,5 @@
 import React from "react";
+import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 
 export const App = () => {
   return (
@@ -12,11 +13,7 @@ export const App = () => {
       }}
     >
       <h1>Please leave feedback</h1>
-      <div>
-        <button>Good</button>
-        <button>Neutral</button>
-        <button>Bad</button>
-      </div>
+      <FeedbackOptions />
       <h2>Statistic</h2>
       <ul>
         <li>Good: 3</li>
