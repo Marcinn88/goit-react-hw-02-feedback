@@ -45,24 +45,24 @@ countPositiveFeedbackPercentage = () => {
 
 render() {
   const btnNames = Object.keys(this.state);
-  return (
-    <div>
-      <section>
-        <FeedbackOptions
-          options={btnNames}
-          onLeaveFeedback={this.onLeaveFeedback}
-        />
-        {this.countZero() ? (
-          <Notification message="There is no feedback" />
-        ) : (
-          <Statistics
-            stat={this.state}
-            total={this.countTotalFeedback()}
-            positivePercentage={this.countPositiveFeedbackPercentage()}
+    return (
+      <div>
+        <section>
+          <FeedbackOptions
+            options={btnNames}
+            onLeaveFeedback={this.onLeaveFeedback}
           />
-        )}
-      </section>
-    </div>
-  );
+          {this.countZero() ? (
+            <Notification message="There is no feedback" />
+          ) : (
+            <Statistics
+              stat={this.state}
+              total={this.countTotalFeedback()}
+              positivePercentage={this.countPositiveFeedbackPercentage()}
+            />
+          )}
+        </section>
+      </div>
+    );
 }
 }
